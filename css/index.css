@@ -1,0 +1,327 @@
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal&family=Vibes&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f9f9f9;
+        font-family: 'Tajawal', sans-serif;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+    /* ----------- navbar ------------- */
+    
+    .img-logout {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -130px;
+    }
+    
+    .right-nav {
+        display: flex;
+        margin-right: 50px;
+    }
+    
+    #menu {
+        margin-right: 150px;
+    }
+    
+    #menu li {
+        margin-right: 1.5rem;
+    }
+    
+    .navbar-nav a.nav-link {
+        font-size: 1.3rem;
+    }
+    
+    li a.nav-link:hover {
+        color: skyblue !important;
+        transition: color .5s linear;
+    }
+    /* ////////////// end navbar //////////// */
+    /* -------------- carousel --------------- */
+    
+    .carousel-item img {
+        max-height: 80vh;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        background: inherit;
+        border: none;
+    }
+    /* ///////////// end carousel ///////////// */
+    /* --------------- box-info ---------------*/
+    
+    .box-control {
+        margin-bottom: 180px;
+    }
+    
+    div.box-info {
+        background-color: #fff;
+        width: 50%;
+        padding: 50px 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 8px #999;
+        position: absolute;
+        top: 82%;
+    }
+    /* //////////////// box-info //////////////// */
+    /* -------------- courses  --------------- */
+    
+    .header-title {
+        font-weight: 800;
+        color: #616571;
+        padding-bottom: 10px;
+    }
+    
+    .header-text {
+        font-size: 1.4rem;
+        color: #616571;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+    
+    .box-course a {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+    /* //////////////// courses /////////////// */
+    /* ----------------- book ----------------- */
+    
+    .help-center {
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        background-color: #24d4c3;
+        padding: 10px 35px;
+        border: 0;
+    }
+    
+    .help-center:hover {
+        background-color: #0cebd4;
+    }
+    /* ////////////// help center ///////////////// */
+    
+    .book .card .card-body {
+        box-shadow: 2px 2px 5px 2px #eee;
+    }
+    
+    .book .card .card-body p {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #6c757d;
+    }
+    
+    .book .card .card-body a {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #198754;
+        margin-bottom: 40px;
+    }
+    /* /////////////////// book //////////////////// */
+    /* ------------- comment people -------------- */
+    
+    .comment-body {
+        width: 400px;
+        height: 330px;
+        background-color: #fff;
+        padding: 30px 30px;
+        position: relative;
+    }
+    
+    .comment-name {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #3498DB;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .comment-full-name {
+        margin-right: 17px;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        font-weight: 600;
+        color: #111
+    }
+    
+    .container-name {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 30px;
+    }
+    /* /////////////// comment people //////////////// */
+    /* ---------------- help center ---------------------*/
+    /* --------------------- form --------------------- */
+    
+    .form-control {
+        border-radius: 0 !important;
+        box-shadow: 20px 10px 10px rgba(0, 0, 0, .3);
+    }
+    
+    .form-content h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        color: #616571;
+        font-weight: bold;
+    }
+    
+    .form-content p {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+        color: #6c757d;
+    }
+    
+    .form-content form {
+        margin-top: 31px;
+    }
+    
+    .form-content form label {
+        font-size: 20px;
+        font-weight: 600;
+        color: #6c757d;
+        position: absolute;
+    }
+    
+    .form-content form .btn {
+        margin-top: 40px;
+    }
+    
+    .btn-theme {
+        background: skyblue;
+        color: #fff;
+        box-shadow: none
+    }
+    
+    .btn-theme:hover {
+        color: #fff;
+        background: #3498DB;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3)
+    }
+    
+    .btn-theme:active,
+    .btn-theme:focus {
+        color: #fff;
+        box-shadow: none
+    }
+    /* /////////////////// form ////////////////// */
+    /*------------------- footer -------------------*/
+    
+    footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background: #252c37;
+        text-align: center;
+        border-top: 5px solid skyblue
+    }
+    
+    footer .social a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 7px;
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 32px;
+        border: 1px solid transparent;
+        border-radius: 80px;
+        transition: all 0.4s linear;
+    }
+    
+    footer .copy-right {
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    footer .copy-right span {
+        font-size: 25px;
+        vertical-align: middle;
+    }
+    
+    .h-twitter:hover {
+        background: #2aa4e3;
+        font-size: 25px
+    }
+    
+    .h-facebook:hover {
+        background: #375b97;
+        font-size: 25px;
+    }
+    
+    .h-google:hover {
+        background: #d14a36;
+        font-size: 25px;
+    }
+    
+    .h-linkedin:hover {
+        background: #2e8fe0;
+        font-size: 25px;
+    }
+    /* //////////////////// end footer //////////////////////*/
+    /* ----------------- Back to top -----------------*/
+    
+    .totop {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 100;
+    }
+    
+    .totop a,
+    .totop a:visited {
+        display: block;
+        width: 50px;
+        height: 50px;
+        color: #fff !important;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        border-radius: 2px;
+        background-color: skyblue;
+    }
+    /* /////////////////// back to top /////////////////// */
+    /* framework */
+    
+    bdo {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    
+    .about-us {
+        margin-top: 200px;
+    }
+    
+    .margin-top {
+        margin-top: 160px
+    }
+    
+    .margin-300 {
+        margin: 250px auto 180px;
+    }
+    
+    .margin-top-100 {
+        margin-top: 100px;
+    }
+    
+    .margin-bottom-100 {
+        margin-bottom: 100px;
+    }
+    
+    .margin-bottom {
+        margin-bottom: 160px;
+    }
+    /* ////// */

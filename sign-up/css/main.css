@@ -1,0 +1,479 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* error and success for php */
+
+.error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    background-color: #da6565;
+    color: #222;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    background-color: rgb(44, 192, 110);
+    color: #000;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*---------------------------------------------*/
+
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: skyblue !important;
+}
+
+.txt1 {
+    font-family: Raleway-Regular;
+    font-size: 20px;
+    color: #999999;
+    line-height: 1.4;
+}
+
+.bo1 {
+    border-bottom: 1px solid #999999;
+}
+
+.hov1:hover {
+    border-color: skyblue;
+}
+
+
+/*---------------------------------------------*/
+
+input {
+    outline: none;
+    border: none;
+    direction: rtl;
+}
+
+
+/*---------------------------------------------*/
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/*    */
+
+.symbol-input {
+    font-size: 24px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    padding-left: 23px;
+    padding-bottom: 5px;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.input:focus+.focus-input+.symbol-input {
+    color: #d33f8d;
+    padding-left: 18px;
+}
+
+.container-signup {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #0250c5;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+}
+
+.container-signup::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../images/img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-login {
+    position: relative;
+    width: 600px;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+
+/*----------------------------------------*/
+
+.login-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login-form-title {
+    font-family: Raleway-Black;
+    font-size: 40px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+label {
+    font-size: 20px;
+    float: right;
+}
+
+
+/*---------------------------------------------*/
+
+.wrap-input {
+    position: relative;
+    width: 48%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.wrap-input-full {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.input {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #686868;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 3px;
+    padding: 0 30px 0 10px;
+}
+
+input::placeholder {
+    color: #ACACAC;
+    font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrap-input label {
+    font-size: 18px;
+    font-family: Raleway-Regular;
+}
+
+
+/*------------------------------------------------------------------ */
+
+
+/* ------------ radio buutton ------------*/
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    user-select: none;
+    direction: rtl;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-container input:checked~.checkmark {
+    background-color: #e5e5e5;
+}
+
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* /////////////// radio button /////////////// */
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+.signup-form-btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signup-btn {
+    font-family: Raleway-Bold;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 55px;
+    border-radius: 3px;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+}
+
+.signup-btn:hover {
+    background: #333333;
+}
+
+
+/* ////////////// buttom /////////////// */
+
+
+/* [ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: white;
+    border: 1px solid #c80000;
+    border-radius: 3px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    pointer-events: none;
+    font-family: Raleway-SemiBold;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ responsive ]*/
+
+@media (max-width: 480px) {
+    .wrap-login100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#toggle {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: url("../images/hide.png");
+    background-size: cover;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#toggle.hide {
+    background: url("../images/show.png");
+    background-size: cover;
+}
+
+
+/* ****** */
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: white;
+    border: 1px solid #c80000;
+    border-radius: 3px;
+    padding: 4px 25px 4px 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    right: 8px;
+    pointer-events: none;
+    font-family: Raleway-SemiBold;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+ul li a {
+    font-size: 10px 20px;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid skyblue;
+    border-radius: 50px;
+    font-size: 20px;
+    outline: none;
+}
+
+ul li a:hover {
+    background-color: skyblue;
+    color: #fff !important;
+}
+
+ul li:first-child a {
+    background-color: skyblue;
+    margin-right: 30px;
+}
